@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projet de formulaire</title>
+</head>
+<body>
+    <header>
+        <h1 id="title"></h1>
+    </header>
+    <p id="description"> Ce formulaire doit etre remplie </p>
+    <form id="survey-form" action="https://survey-form.freecodecamp.rocks" method="post">
+        <fieldset>
+            <label for="nom"> NOM : <input type="text" id="nom" name="nom" required></label>
+            <label for="email"> EMAIL : <input type="text" id="email" name="email" required></label>
+            <label for="age"> AGE : <input type="number" id="age" name="age" required min="3" max="99"></label>
+        </fieldset>
+        <fieldset>
+            <label for="profession"> PROFESSION :
+            <select name="dropdown" id="dropdown">
+                <option value="">(selectionnez la profession)</option>
+                <option value="1">Etudiant</option>
+                <option value="2">Professeur</option>
+                <option value="3">agent administratif</option>
+                <option value="4">Informaticien</option>
+            </select> </label>
+        </fieldset>
+        <fieldset>
+            <legend>Type de compte</legend>
+            <label for="compte"> Compte dedié : <input type="radio" id="compte" name="compte" required></label>
+            <label for="personel"> Compte perso: <input type="radio" id="personel" name="personel" required></label>
+            <label for="busnes"> Compte bizness: <input type="radio" id="buzness" name="buzness" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Cochez des  case </legend>
+            <label for="Data"> Data Analyse des donnees: <input type="checkbox" id="data" name="data" required></label>
+        
+                <label for="dev"> develppement web : <input type="checkbox" id="dev" name="device-width" required></label>
+                <label for="front"> developpement front end: <input type="checkbox" id="front" name="front" required></label>
+                <label for="base"> administrateur bas de donnees <input type="checkbox" id="base" name="base" required></label>
+
+        </fieldset>
+        <fieldset>
+            <label for="bio">votre commentaire:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Ici votre commentaire"></textarea>
+              </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
